@@ -172,6 +172,10 @@ def download_file(filename):
         return send_from_directory(OUTPUT_FOLDER, filename, as_attachment=True)
     else:
         return jsonify({"error": "File not found!"}), 404
+    
+@app.route('/')
+def home():
+    return "✅ Flask app deployed successfully on Railway!"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
