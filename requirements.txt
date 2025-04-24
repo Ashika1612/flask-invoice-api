@@ -2,3 +2,4 @@ Flask==2.0.1
 pandas
 openpyxl
 PyMuPDF
+Werkzeug==2.0.3
